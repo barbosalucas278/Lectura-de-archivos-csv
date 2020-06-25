@@ -50,8 +50,9 @@ int menu()
     printf("3. Listar articulos.\n");
     printf("4. Calcular descuentos segun rubro.\n");
     printf("5. Guardar datos.\n");
-    printf("6. Salir\n");
-	if(!getNumber(&option," ","ERROR, opcion incorrecta",1,6,2)){
+    printf("6. Informes.\n");
+    printf("7. Salir\n");
+	if(!getNumber(&option," ","ERROR, opcion incorrecta",1,7,2)){
 		option = 5;
 	}
 	return option;

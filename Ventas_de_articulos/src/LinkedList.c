@@ -626,8 +626,13 @@ int ll_sort(LinkedList *this, int (*pFunc)(void*, void*), int order) {
 	return returnAux;
 
 }
-
-
+/*	\brief modifica un elemento de la lista usando una funcion como criterio.
+ * 	\param this LinkedList* puntero a la lista
+ * 	\param (*pFunc) puntero a la funcion criterio
+ * 	\return this LinkedList* retorna un puntero a la lista modificada.
+ *
+ *
+ */
 
 LinkedList* ll_map(LinkedList* this, void (*pFunc)(void*)){
 	int i;
@@ -636,13 +641,21 @@ LinkedList* ll_map(LinkedList* this, void (*pFunc)(void*)){
 	if(this != NULL && pFunc != NULL){
 			for(i=0;i<lenLL;i++){
 				auxElement = ll_get(this, i);
+				if(auxElement!= NULL){
 					pFunc(auxElement);
 					ll_set(this,i,auxElement);
+				}
 			}
 	}
 	return this;
 }
-
+/*	\brief cuenta los elementos de la lista usando como criterio una funcion.
+ *
+ * 	\param this LinkedList* puntero a la lista
+ * 	\param (*pFunc) puntero a la funcion criterio
+ * 	\return this LinkedList* retorna el valor de la cantidad.
+ *
+ */
 int ll_count(LinkedList* this, int (*pFunc)(void* )){
 	int auxCantidad = 0;
 	int cantidadRetornada = 0;

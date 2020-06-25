@@ -5,9 +5,9 @@
 #include "utn.h"
 #include "Articulo.h"
 
-/*\brief opens file from text in read mode.
+/*
+ * \brief opens a text file in read mode by entering the file name of the by command line.
  *
- * \param path char*
  * \return FILE*
  *
  */
@@ -21,7 +21,7 @@ FILE* openFileFromText(){
 	}
 	return file;
 }
-/** \brief Parse data employee data from data.csv file (text mode).
+/** \brief Parse data employee data from file (text mode).
  *
  * \param path char*
  * \param pArrayListEmployee LinkedList*
@@ -73,9 +73,11 @@ FILE* writeFileFromText(char* path){
 		}
 	return file;
 }
-/*
- *
- *
+/*  \brief write all articles in text mode.
+ *	\param pFile FILE*
+ *	\param pArrayListEmployee LinkedList*
+ *	\return int (-1) Error [pFile and eArticulo pointers are NULL].
+ *			(1)Is ok.
  */
 int fprintfArticle (eArticulo* this, FILE* pFile){
 	int ret = -1;
@@ -84,7 +86,7 @@ int fprintfArticle (eArticulo* this, FILE* pFile){
 	float bufferPrecio;
 	char bufferMedida[16];
 	int bufferRubroId;
-	if(this != NULL){
+	if(this != NULL && pFile != NULL){
 		articulo_getId(this,&bufferId);
 		articulo_getArticulo(this,bufferArticulo);
 		articulo_getPrecio(this,&bufferPrecio);
@@ -100,8 +102,7 @@ int fprintfArticle (eArticulo* this, FILE* pFile){
  * \brief save information in the file.
  *	\param pFile FILE*
  *	\param pArrayListEmployee LinkedList*
- *	\param lenLL int
- *	\return (-1) Error [pFile and pArrayListEmployee pointers are NUL or lenLL less than 0].
+ *	\return (-1) Error [pFile and pList pointers are NULL].
  *			(1)Is ok.
  */
 
@@ -113,8 +114,11 @@ int saveAsText(FILE *pFile, LinkedList *pList) {
 	if(pFile != NULL && pList != NULL){
 		for(i=0;i<lenLL;i++){
 			auxArticulo = ll_get(pList,i);
-			fprintfArticle(auxArticulo,pFile);
-			ret = 1;
+			if(auxArticulo != NULL){
+				fprintf(pFile,"id,articulo,medida,precio,rubroId\n");
+				fprintfArticle(auxArticulo,pFile);
+				ret = 1;
+			}
 		}
 	}
 	return ret;

@@ -727,3 +727,47 @@ Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
 gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
 Info: Nothing to build for Ventas_de_articulos
+17:55:09 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+18:17:29 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+18:57:37 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+..\src\main.c: In function 'main':
+..\src\main.c:43:4: warning: implicit declaration of function 'distribuidora_informes'; did you mean 'distribuidora_listArticles'? [-Wimplicit-function-declaration]
+   43 |    distribuidora_informes(articlesList);
+      |    ^~~~~~~~~~~~~~~~~~~~~~
+      |    distribuidora_listArticles
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+18:58:00 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+19:02:28 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+19:04:03 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+19:04:44 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 

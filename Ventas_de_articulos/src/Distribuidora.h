@@ -11,6 +11,7 @@ int distribuidora_sortArticles(LinkedList* pList);
 int distribuidora_listArticles(LinkedList* pList);
 int distribuidora_calculateDiscount(LinkedList* pList);
 int distribuidora_saveOnFile(LinkedList* pList,char* path);
+int distribuidora_informes(LinkedList* pList);
 
 int distribuidora_printAllArticles (eArticulo* this , int lenList);
 

@@ -42,4 +42,7 @@ int articulo_printArticle(eArticulo* this);
 int sortByArticle(void* article1, void* article2);
 void articulo_discount(void *articulo);
 
+int articulo_moreThan100(void* pArticle);
+int articulo_cantidadRubro1(void* pArticle);
+
 void articulo_delete(eArticulo* this);

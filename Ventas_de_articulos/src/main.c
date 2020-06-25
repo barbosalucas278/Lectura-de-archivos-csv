@@ -40,9 +40,12 @@ int main(void) {
 			distribuidora_saveOnFile(articlesList,PATH_SAVE);
 			break;
 		case 6:
+			distribuidora_informes(articlesList);
+			break;
+		case 7:
 			break;
 		}
-	}while(option!=6);
+	}while(option!=7);
 
 	return 0;
 }
