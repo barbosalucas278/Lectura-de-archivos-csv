@@ -2,7 +2,7 @@
  * Distribuidora.c
  *
  *  Created on: 25 jun. 2020
- *      Author: LucasBarbosa
+ *      Author: pocho
  */
 #include <string.h>
 #include <stdio.h>
@@ -126,10 +126,9 @@ int distribuidora_saveOnFile(LinkedList* pList,char* path){
 	}
 	return ret;
 }
-/*	\brief generates reports from the list of articles.
- *  \param pList LinkedList*
- *	\return int (-1) Error [pList pointer are NULL or lenLL equal than 0]
- * 				(1) is ok
+/*
+ *
+ *
  */
 int distribuidora_informes(LinkedList* pList){
 	int ret = -1;

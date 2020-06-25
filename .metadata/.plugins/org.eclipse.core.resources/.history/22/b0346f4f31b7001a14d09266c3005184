@@ -300,11 +300,9 @@ int sortByArticle(void* article1, void* article2){
 	return ret;
 }
 
-/*\brief calcula el descuento del precio de los articulos segun el rubro
- * \param articulo void*
- *
- */
-
+/* \brief calcula el monto de una entrada segun el dia de funcion
+\param pVenta eVenta*
+*/
 void articulo_discount(void *articulo) {
 	int rubroId ;
 	float precio;
@@ -321,10 +319,8 @@ void articulo_discount(void *articulo) {
 
 }
 /*
- *\brief devuelve la cantidad de articulos con el precio mayor a 100
- *\param pArticle void*
- *\return int (0) si el articulo es NULL o el precio es menos a 100.0
- *			  (1) si el precio dle articulo es mayor a 100.0
+ *
+ *
  */
 int articulo_moreThan100(void* pArticle){
 	int auxCantidad=0;
@@ -338,10 +334,8 @@ int articulo_moreThan100(void* pArticle){
 	return auxCantidad;
 }
 /*
- *\brief devuelve la cantidad de articulos del rubroId 1
- *\param pArticle void*
- *\return int (0) si el articulo es NULL o el rubroId es distinto de 1.
- *			  (1) si el articulo es del rubroId 1.
+ *
+ *
  */
 int articulo_cantidadRubro1(void* pArticle){
 	int auxCantidad = 0;

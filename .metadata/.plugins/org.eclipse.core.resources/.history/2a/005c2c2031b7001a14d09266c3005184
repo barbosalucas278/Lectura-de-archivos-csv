@@ -2,7 +2,7 @@
  * Distribuidora.c
  *
  *  Created on: 25 jun. 2020
- *      Author: LucasBarbosa
+ *      Author: pocho
  */
 #include <string.h>
 #include <stdio.h>

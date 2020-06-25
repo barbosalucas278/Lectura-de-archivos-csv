@@ -46,7 +46,6 @@ int main(void) {
 			break;
 		}
 	}while(option!=7);
-	ll_clear(articlesList);
-	ll_deleteLinkedList(articlesList);
+
 	return 0;
 }

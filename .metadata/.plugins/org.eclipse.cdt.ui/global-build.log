@@ -771,3 +771,17 @@ Info: Nothing to build for Ventas_de_articulos
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
 gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+19:13:41 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+19:19:06 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 

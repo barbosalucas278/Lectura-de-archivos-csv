@@ -333,6 +333,8 @@ int ll_clear(LinkedList* this)
     int i;
     int lenLL = ll_len(this);
     if(this != NULL){
+    	/*this->pFirstNode = NULL;
+    	this->size = 0;*/
     	for(i=0;i<lenLL;i++){
     		ll_remove(this,i);
 			returnAux = 0;
