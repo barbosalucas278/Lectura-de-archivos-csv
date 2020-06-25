@@ -1,0 +1,40 @@
+/*
+ * Articulo.h
+ *
+ *  Created on: 25 jun. 2020
+ *      Author: pocho
+ */
+
+#ifndef ARTICULO_H_
+#define ARTICULO_H_
+typedef struct{
+	int id;
+	char articulo[64];
+	float precio;
+	char medida[16];
+	int rubroId;
+}eArticulo;
+
+
+#endif /* ARTICULO_H_ */
+
+eArticulo* articulo_new();
+eArticulo* articulo_newParametros();
+
+int articulo_setId(eArticulo* this, int id);
+int articulo_getId(eArticulo* this, int* id);
+
+int articulo_setArticulo(eArticulo* this, char* articulo);
+int articulo_getArticulo(eArticulo* this, char* articulo);
+
+int articulo_setPrecio();
+int articulo_getPrecio();
+
+int articulo_setMedida();
+int articulo_getMedida();
+
+int articulo_setRubrioId();
+int articulo_getRubroId();
+int articulo_getRubroChar();
+
+void articulo_delete(eArticulo* this);

@@ -1,0 +1,41 @@
+/*
+ ============================================================================
+ Name        : Distribuidora.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include "LinkedList.h"
+#include "utn.h"
+#include "Distribuidora.h"
+
+
+int main(void) {
+	setbuf(stdout, NULL);
+	int option;
+	do{
+		option = menu();
+		switch(option){
+		case 1:
+			break;
+		case 2:
+			break;
+		case 3:
+			break;
+		case 4:
+			break;
+		case 5:
+			break;
+		case 6:
+			break;
+		}
+	}while(option!=6);
+
+	return 0;
+}

@@ -1,0 +1,22 @@
+/*
+ * Distribuidora.h
+ *
+ *  Created on: 25 jun. 2020
+ *      Author: pocho
+ */
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include "LinkedList.h"
+#include "utn.h"
+#include "Articulo.h"
+#include "parser.h"
+
+int distribuidora_readFromFlie();
+int distribuidora_sortArticles();
+int distribuidora_listArticles();
+int distribuidora_calculateDiscount();
+int distribuidora_saveOnFile();
+
+int distribuidora_printAllArticles (eArticulo* this , int lenList);
+int distribuidora_fprintfArticle (LinkedList* this, FILE* pFile);

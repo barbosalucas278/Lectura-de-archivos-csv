@@ -1,0 +1,100 @@
+
+#include <stdlib.h>
+#include <string.h>
+#include "parser.h"
+#include "utn.h"
+#include "Articulo.h"
+
+/*\brief opens file from text in read mode.
+ *
+ * \param path char*
+ * \return FILE*
+ *
+ */
+FILE* openFileFromText(){
+	FILE* file;
+	char path[32];
+	getString(path,"Ingrese el nombre dle archivo","Error, nombre incorrecto, no se olvide de agregarle .csv",32,2);
+	file = fopen(path, "r");
+	if (file == NULL) {
+		printf("No se pudo abrir el archivo.");
+	}
+	return file;
+}
+/** \brief Parse data employee data from data.csv file (text mode).
+ *
+ * \param path char*
+ * \param pArrayListEmployee LinkedList*
+ * \return int (-1) Error [pFile pointer and pArrayListEmployee are NULL or fscanf can't read the file]
+ * 				(1) is ok.
+ *
+ */
+int parser_articlesFromText(FILE *pFile, LinkedList *pArrayListVentas) {
+	int ret = -1;
+	eArticulo *newArticle;
+	char buffer[6][20];
+	int count;
+	if (pFile != NULL && pArrayListVentas != NULL) {
+		fscanf(pFile, "%[^,],%[^,],%[^,],%[^,],%[^\n]\n", buffer[0],
+				buffer[1], buffer[2], buffer[3], buffer[4], buffer[5]);
+		while (!feof(pFile)) {
+			count = fscanf(pFile,"%[^;];%[^;];%[^;];%[^;];%[^;];%[^\n]\n",
+					buffer[0], buffer[1], buffer[2], buffer[3], buffer[4],
+					buffer[5]);
+			if (count < 6) {
+				ret = -1;
+				break;
+			}
+			newArticle = venta_newParametros(buffer[0], buffer[1], buffer[2], buffer[3], buffer[4],
+					buffer[5]);
+			if(newArticle != NULL){
+				ll_add(pArrayListVentas, (Venta*)newArticle);
+				ret = 1;
+			}
+			}
+
+
+	}
+
+	return ret;
+}
+
+/*\brief opens file from text in write mode.
+ *
+ * \param path char*
+ * \return FILE*
+ *
+ */
+FILE* writeFileFromText(char* path){
+
+	FILE* file;
+		file = fopen(path,"w");
+		if(file == NULL){
+			printf("El archivo no se puede abrir en modo escritura");
+		}
+	return file;
+}
+/*
+ * \brief save information in the file.
+ *	\param pFile FILE*
+ *	\param pArrayListEmployee LinkedList*
+ *	\param lenLL int
+ *	\return (-1) Error [pFile and pArrayListEmployee pointers are NUL or lenLL less than 0].
+ *			(1)Is ok.
+ */
+
+int saveAsText(FILE *pFile, LinkedList *pArrayListVentas,int informe1, int informe2, int informe3, int informe4) {
+	int ret = -1;
+	if(pFile != NULL && pArrayListVentas != NULL){
+		fprintf(pFile,"*************************\n");
+		fprintf(pFile,"Infomres nformes\n");
+		fprintf(pFile,"*************************\n");
+		fprintf(pFile,"- Cantidad de unidades vendidas totales : %d\n",informe1);
+		fprintf(pFile,"- Cantidad de ventas por monto mayor a $10.000 : %d\n",informe2);
+		fprintf(pFile,"- Cantidad de ventas por monto mayor a $20.000 : %d\n",informe3);
+		fprintf(pFile,"- Cantidad de TVs LCD vendidas : %d\n",informe4);
+		fprintf(pFile,"*************************\n");
+		ret = 1;
+	}
+	return ret;
+}

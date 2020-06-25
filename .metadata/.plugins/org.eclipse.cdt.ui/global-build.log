@@ -1,0 +1,729 @@
+02:54:37 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+02:55:44 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\validation.o" "..\\src\\validation.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+03:07:18 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+..\src\Articulo.c: In function 'articulo_fprintfArticle':
+..\src\Articulo.c:264:30: warning: passing argument 2 of 'articulo_getRubroChar' makes pointer from integer without a cast [-Wint-conversion]
+  264 |   articulo_getRubroChar(this,bufferRubroId);
+      |                              ^~~~~~~~~~~~~
+      |                              |
+      |                              int
+..\src\Articulo.c:186:50: note: expected 'char *' but argument is of type 'int'
+  186 | int articulo_getRubroChar(eArticulo* this, char* rubroId){
+      |                                            ~~~~~~^~~~~~~
+..\src\Articulo.c:266:11: warning: passing argument 1 of 'fprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  266 |   fprintf("%d,%s,%f,%s,%d\n",bufferId,bufferArticulo,bufferPrecio,bufferMedida,bufferRubroId);
+      |           ^~~~~~~~~~~~~~~~~~
+      |           |
+      |           char *
+In file included from ..\src\Articulo.c:9:
+c:\mingw\include\stdio.h:461:47: note: expected 'FILE *' {aka 'struct _iobuf *'} but argument is of type 'char *'
+  461 | _CRTIMP __cdecl __MINGW_NOTHROW  int fprintf (FILE *, const char *, ...);
+      |                                               ^~~~~~
+..\src\Articulo.c:266:30: warning: passing argument 2 of 'fprintf' makes pointer from integer without a cast [-Wint-conversion]
+  266 |   fprintf("%d,%s,%f,%s,%d\n",bufferId,bufferArticulo,bufferPrecio,bufferMedida,bufferRubroId);
+      |                              ^~~~~~~~
+      |                              |
+      |                              int
+In file included from ..\src\Articulo.c:9:
+c:\mingw\include\stdio.h:461:55: note: expected 'const char *' but argument is of type 'int'
+  461 | _CRTIMP __cdecl __MINGW_NOTHROW  int fprintf (FILE *, const char *, ...);
+      |                                                       ^~~~~~~~~~~~
+..\src\Articulo.c:264:3: warning: 'bufferRubroId' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  264 |   articulo_getRubroChar(this,bufferRubroId);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+..\src\Distribuidora.c: In function 'distribuidora_readFromFlie':
+..\src\Distribuidora.c:20:15: warning: implicit declaration of function 'openFileFromText' [-Wimplicit-function-declaration]
+   20 |  FILE* file = openFileFromText();
+      |               ^~~~~~~~~~~~~~~~
+..\src\Distribuidora.c:20:15: warning: initialization of 'FILE *' {aka 'struct _iobuf *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+..\src\Distribuidora.c:22:6: warning: implicit declaration of function 'parser_articlesFromText' [-Wimplicit-function-declaration]
+   22 |   if(parser_articlesFromText(file,pList)){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~
+..\src\Distribuidora.c: In function 'distribuidora_listArticles':
+..\src\Distribuidora.c:42:6: warning: unused variable 'i' [-Wunused-variable]
+   42 |  int i;
+      |      ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+03:07:35 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+..\src\Articulo.c: In function 'articulo_fprintfArticle':
+..\src\Articulo.c:266:11: warning: passing argument 1 of 'fprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  266 |   fprintf("%d,%s,%f,%s,%d\n",bufferId,bufferArticulo,bufferPrecio,bufferMedida,bufferRubroId);
+      |           ^~~~~~~~~~~~~~~~~~
+      |           |
+      |           char *
+In file included from ..\src\Articulo.c:9:
+c:\mingw\include\stdio.h:461:47: note: expected 'FILE *' {aka 'struct _iobuf *'} but argument is of type 'char *'
+  461 | _CRTIMP __cdecl __MINGW_NOTHROW  int fprintf (FILE *, const char *, ...);
+      |                                               ^~~~~~
+..\src\Articulo.c:266:30: warning: passing argument 2 of 'fprintf' makes pointer from integer without a cast [-Wint-conversion]
+  266 |   fprintf("%d,%s,%f,%s,%d\n",bufferId,bufferArticulo,bufferPrecio,bufferMedida,bufferRubroId);
+      |                              ^~~~~~~~
+      |                              |
+      |                              int
+In file included from ..\src\Articulo.c:9:
+c:\mingw\include\stdio.h:461:55: note: expected 'const char *' but argument is of type 'int'
+  461 | _CRTIMP __cdecl __MINGW_NOTHROW  int fprintf (FILE *, const char *, ...);
+      |                                                       ^~~~~~~~~~~~
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Articulo.o: in function `articulo_fprintfArticle':
+C:\Users\pocho\Desktop\examen 2\Ventas_de_articulos\Debug/../src/Articulo.c:264: undefined reference to `articulo_getRubroId'
+collect2.exe: error: ld returned 1 exit status
+03:08:00 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+..\src\Articulo.c: In function 'articulo_fprintfArticle':
+..\src\Articulo.c:266:11: warning: passing argument 1 of 'fprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  266 |   fprintf("%d,%s,%f,%s,%d\n",bufferId,bufferArticulo,bufferPrecio,bufferMedida,bufferRubroId);
+      |           ^~~~~~~~~~~~~~~~~~
+      |           |
+      |           char *
+In file included from ..\src\Articulo.c:9:
+c:\mingw\include\stdio.h:461:47: note: expected 'FILE *' {aka 'struct _iobuf *'} but argument is of type 'char *'
+  461 | _CRTIMP __cdecl __MINGW_NOTHROW  int fprintf (FILE *, const char *, ...);
+      |                                               ^~~~~~
+..\src\Articulo.c:266:30: warning: passing argument 2 of 'fprintf' makes pointer from integer without a cast [-Wint-conversion]
+  266 |   fprintf("%d,%s,%f,%s,%d\n",bufferId,bufferArticulo,bufferPrecio,bufferMedida,bufferRubroId);
+      |                              ^~~~~~~~
+      |                              |
+      |                              int
+In file included from ..\src\Articulo.c:9:
+c:\mingw\include\stdio.h:461:55: note: expected 'const char *' but argument is of type 'int'
+  461 | _CRTIMP __cdecl __MINGW_NOTHROW  int fprintf (FILE *, const char *, ...);
+      |                                                       ^~~~~~~~~~~~
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Articulo.o: in function `articulo_fprintfArticle':
+C:\Users\pocho\Desktop\examen 2\Ventas_de_articulos\Debug/../src/Articulo.c:264: undefined reference to `articulo_getRubroId'
+collect2.exe: error: ld returned 1 exit status
+03:08:27 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+..\src\Articulo.c:252:5: error: conflicting types for 'articulo_fprintfArticle'
+  252 | int articulo_fprintfArticle (eArticulo* this, FILE* pFile){
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Articulo.c:12:
+..\src\Articulo.h:42:5: note: previous declaration of 'articulo_fprintfArticle' was here
+   42 | int articulo_fprintfArticle (eArticulo* this);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+03:08:38 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Articulo.o: in function `articulo_fprintfArticle':
+C:\Users\pocho\Desktop\examen 2\Ventas_de_articulos\Debug/../src/Articulo.c:264: undefined reference to `articulo_getRubroId'
+collect2.exe: error: ld returned 1 exit status
+03:08:41 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Articulo.o: in function `articulo_fprintfArticle':
+C:\Users\pocho\Desktop\examen 2\Ventas_de_articulos\Debug/../src/Articulo.c:264: undefined reference to `articulo_getRubroId'
+collect2.exe: error: ld returned 1 exit status
+03:09:51 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+..\src\Articulo.c: In function 'articulo_getRubroChar':
+..\src\Articulo.c:189:2: warning: implicit declaration of function 'articulo_getRubrioId'; did you mean 'articulo_getRubroId'? [-Wimplicit-function-declaration]
+  189 |  articulo_getRubrioId(this,&auxRubroId);
+      |  ^~~~~~~~~~~~~~~~~~~~
+      |  articulo_getRubroId
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Articulo.o: in function `articulo_getRubroChar':
+C:\Users\pocho\Desktop\examen 2\Ventas_de_articulos\Debug/../src/Articulo.c:189: undefined reference to `articulo_getRubrioId'
+collect2.exe: error: ld returned 1 exit status
+03:09:55 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Articulo.o: in function `articulo_getRubroChar':
+C:\Users\pocho\Desktop\examen 2\Ventas_de_articulos\Debug/../src/Articulo.c:189: undefined reference to `articulo_getRubrioId'
+collect2.exe: error: ld returned 1 exit status
+03:10:07 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+03:19:34 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+..\src\Distribuidora.c: In function 'distribuidora_readFromFlie':
+..\src\Distribuidora.c:20:15: warning: implicit declaration of function 'openFileFromText' [-Wimplicit-function-declaration]
+   20 |  FILE* file = openFileFromText();
+      |               ^~~~~~~~~~~~~~~~
+..\src\Distribuidora.c:20:15: warning: initialization of 'FILE *' {aka 'struct _iobuf *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+..\src\Distribuidora.c:22:6: warning: implicit declaration of function 'parser_articlesFromText' [-Wimplicit-function-declaration]
+   22 |   if(parser_articlesFromText(file,pList)){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~
+..\src\Distribuidora.c: In function 'distribuidora_listArticles':
+..\src\Distribuidora.c:48:7: warning: implicit declaration of function 'distribuidora_printAllArticles'; did you mean 'distribuidora_listArticles'? [-Wimplicit-function-declaration]
+   48 |   if (distribuidora_printAllArticles(pList, lenLL)) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |       distribuidora_listArticles
+..\src\Distribuidora.c: In function 'distribuidora_printAllArticles':
+..\src\Distribuidora.c:78:2: error: unknown type name 'eArticulo'
+   78 |  eArticulo* this;
+      |  ^~~~~~~~~
+..\src\Distribuidora.c:83:5: warning: implicit declaration of function 'articulo_printArticle' [-Wimplicit-function-declaration]
+   83 |     articulo_printArticle(this);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+03:20:39 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+..\src\Distribuidora.c: In function 'distribuidora_readFromFlie':
+..\src\Distribuidora.c:21:15: warning: implicit declaration of function 'openFileFromText' [-Wimplicit-function-declaration]
+   21 |  FILE* file = openFileFromText();
+      |               ^~~~~~~~~~~~~~~~
+..\src\Distribuidora.c:21:15: warning: initialization of 'FILE *' {aka 'struct _iobuf *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+..\src\Distribuidora.c:23:6: warning: implicit declaration of function 'parser_articlesFromText' [-Wimplicit-function-declaration]
+   23 |   if(parser_articlesFromText(file,pList)){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~
+..\src\Distribuidora.c: In function 'distribuidora_listArticles':
+..\src\Distribuidora.c:49:7: warning: implicit declaration of function 'distribuidora_printAllArticles'; did you mean 'distribuidora_listArticles'? [-Wimplicit-function-declaration]
+   49 |   if (distribuidora_printAllArticles(pList, lenLL)) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |       distribuidora_listArticles
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+03:20:59 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+..\src\Distribuidora.c: In function 'distribuidora_listArticles':
+..\src\Distribuidora.c:50:7: warning: implicit declaration of function 'distribuidora_printAllArticles'; did you mean 'distribuidora_listArticles'? [-Wimplicit-function-declaration]
+   50 |   if (distribuidora_printAllArticles(pList, lenLL)) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |       distribuidora_listArticles
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+03:21:52 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+In file included from ..\src\Articulo.c:12:
+..\src\Articulo.h:42:30: error: unknown type name 'LinkedList'
+   42 | int articulo_fprintfArticle (LinkedList* this, FILE* pFile);
+      |                              ^~~~~~~~~~
+03:22:37 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+In file included from ..\src\main.c:16:
+..\src\Distribuidora.h:14:37: error: unknown type name 'eArticulo'
+   14 | int distribuidora_printAllArticles (eArticulo* this , int lenList);
+      |                                     ^~~~~~~~~
+03:23:34 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+..\src\Distribuidora.c: In function 'distribuidora_listArticles':
+..\src\Distribuidora.c:44:38: warning: passing argument 1 of 'distribuidora_printAllArticles' from incompatible pointer type [-Wincompatible-pointer-types]
+   44 |   if (distribuidora_printAllArticles(pList, lenLL)) {
+      |                                      ^~~~~
+      |                                      |
+      |                                      LinkedList * {aka struct LinkedList *}
+In file included from ..\src\Distribuidora.c:7:
+..\src\Distribuidora.h:21:48: note: expected 'eArticulo *' {aka 'struct <anonymous> *'} but argument is of type 'LinkedList *' {aka 'struct LinkedList *'}
+   21 | int distribuidora_printAllArticles (eArticulo* this , int lenList);
+      |                                     ~~~~~~~~~~~^~~~
+..\src\Distribuidora.c: At top level:
+..\src\Distribuidora.c:71:5: error: conflicting types for 'distribuidora_printAllArticles'
+   71 | int distribuidora_printAllArticles (LinkedList* pList , int lenList){
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Distribuidora.c:7:
+..\src\Distribuidora.h:21:5: note: previous declaration of 'distribuidora_printAllArticles' was here
+   21 | int distribuidora_printAllArticles (eArticulo* this , int lenList);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Distribuidora.c:90:5: error: conflicting types for 'distribuidora_fprintfArticle'
+   90 | int distribuidora_fprintfArticle (eArticulo* this, FILE* pFile){
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Distribuidora.c:7:
+..\src\Distribuidora.h:22:5: note: previous declaration of 'distribuidora_fprintfArticle' was here
+   22 | int distribuidora_fprintfArticle (LinkedList* this, FILE* pFile);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+03:23:57 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+..\src\Distribuidora.c: In function 'distribuidora_listArticles':
+..\src\Distribuidora.c:50:7: warning: implicit declaration of function 'distribuidora_printAllArticles'; did you mean 'distribuidora_listArticles'? [-Wimplicit-function-declaration]
+   50 |   if (distribuidora_printAllArticles(pList, lenLL)) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |       distribuidora_listArticles
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+In file included from ..\src\main.c:16:
+..\src\Distribuidora.h:15:37: error: unknown type name 'eArticulo'
+   15 | int distribuidora_printAllArticles (eArticulo* this , int lenList);
+      |                                     ^~~~~~~~~
+03:24:14 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+03:24:55 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+03:25:38 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+03:27:45 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+03:28:17 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Ventas_de_articulos.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+03:28:19 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+03:28:47 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Ventas_de_articulos.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+03:28:49 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+03:29:18 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+03:29:50 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+03:30:56 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+03:31:52 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+03:32:19 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+03:38:30 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+..\src\Articulo.c: In function 'sortByArticle':
+..\src\Articulo.c:18:26: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   18 | eArticulo* articulo_new(){
+      |                          ^
+..\src\Articulo.c:35:118: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   35 | eArticulo* articulo_newParametros(char* idStr, char* articuloStr, char* precioStr, char* medidaStr, char* rubroIdStr){
+      |                                                                                                                      ^
+..\src\Articulo.c:51:44: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   51 | int articulo_setId(eArticulo* this, int id){
+      |                                            ^
+..\src\Articulo.c:72:45: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   72 | int articulo_getId(eArticulo* this, int* id){
+      |                                             ^
+..\src\Articulo.c:85:58: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   85 | int articulo_setArticulo(eArticulo* this, char* articulo){
+      |                                                          ^
+..\src\Articulo.c:99:58: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   99 | int articulo_getArticulo(eArticulo* this, char* articulo){
+      |                                                          ^
+..\src\Articulo.c:112:54: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  112 | int articulo_setPrecio(eArticulo* this, float precio){
+      |                                                      ^
+..\src\Articulo.c:124:55: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  124 | int articulo_getPrecio(eArticulo* this, float* precio){
+      |                                                       ^
+..\src\Articulo.c:136:54: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  136 | int articulo_setMedida(eArticulo* this, char* medida){
+      |                                                      ^
+..\src\Articulo.c:148:54: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  148 | int articulo_getMedida(eArticulo* this, char* medida){
+      |                                                      ^
+..\src\Articulo.c:160:55: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  160 | int articulo_setRubrioId(eArticulo* this, int rubroId){
+      |                                                       ^
+..\src\Articulo.c:173:55: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  173 | int articulo_getRubroId(eArticulo* this, int* rubroId){
+      |                                                       ^
+..\src\Articulo.c:186:58: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  186 | int articulo_getRubroChar(eArticulo* this, char* rubroId){
+      |                                                          ^
+..\src\Articulo.c:216:44: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  216 | int articulo_printArticle (eArticulo* this){
+      |                                            ^
+..\src\Articulo.c:242:50: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  242 | int sortByArticle(void* article1, void* article2){
+      |                                                  ^
+..\src\Articulo.c:264:38: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  264 | void articulo_delete(eArticulo* this){
+      |                                      ^
+In file included from ..\src\Articulo.c:12:
+..\src\Articulo.h:42:5: error: old-style parameter declarations in prototyped function definition
+   42 | int sortByArticle(void* article1, void* article2)
+      |     ^~~~~~~~~~~~~
+..\src\Articulo.c:269: error: expected '{' at end of input
+..\src\Articulo.c:268:1: warning: control reaches end of non-void function [-Wreturn-type]
+  268 | }
+      | ^
+03:39:42 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'sortByArticle':
+..\src\parser.c:14:25: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   14 | FILE* openFileFromText(){
+      |                         ^
+..\src\parser.c:32:72: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   32 | int parser_articlesFromText(FILE *pFile, LinkedList *pArrayListVentas) {
+      |                                                                        ^
+..\src\parser.c:67:36: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   67 | FILE* writeFileFromText(char* path){
+      |                                    ^
+..\src\parser.c:85:114: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   85 | int saveAsText(FILE *pFile, LinkedList *pArrayListVentas,int informe1, int informe2, int informe3, int informe4) {
+      |                                                                                                                  ^
+In file included from ..\src\parser.c:6:
+..\src\Articulo.h:42:5: error: old-style parameter declarations in prototyped function definition
+   42 | int sortByArticle(void* article1, void* article2)
+      |     ^~~~~~~~~~~~~
+..\src\parser.c:100: error: expected '{' at end of input
+..\src\parser.c:99:1: warning: control reaches end of non-void function [-Wreturn-type]
+   99 | }
+      | ^
+03:39:51 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+..\src\Articulo.c: In function 'sortByArticle':
+..\src\Articulo.c:18:26: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   18 | eArticulo* articulo_new(){
+      |                          ^
+..\src\Articulo.c:35:118: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   35 | eArticulo* articulo_newParametros(char* idStr, char* articuloStr, char* precioStr, char* medidaStr, char* rubroIdStr){
+      |                                                                                                                      ^
+..\src\Articulo.c:51:44: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   51 | int articulo_setId(eArticulo* this, int id){
+      |                                            ^
+..\src\Articulo.c:72:45: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   72 | int articulo_getId(eArticulo* this, int* id){
+      |                                             ^
+..\src\Articulo.c:85:58: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   85 | int articulo_setArticulo(eArticulo* this, char* articulo){
+      |                                                          ^
+..\src\Articulo.c:99:58: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   99 | int articulo_getArticulo(eArticulo* this, char* articulo){
+      |                                                          ^
+..\src\Articulo.c:112:54: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  112 | int articulo_setPrecio(eArticulo* this, float precio){
+      |                                                      ^
+..\src\Articulo.c:124:55: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  124 | int articulo_getPrecio(eArticulo* this, float* precio){
+      |                                                       ^
+..\src\Articulo.c:136:54: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  136 | int articulo_setMedida(eArticulo* this, char* medida){
+      |                                                      ^
+..\src\Articulo.c:148:54: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  148 | int articulo_getMedida(eArticulo* this, char* medida){
+      |                                                      ^
+..\src\Articulo.c:160:55: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  160 | int articulo_setRubrioId(eArticulo* this, int rubroId){
+      |                                                       ^
+..\src\Articulo.c:173:55: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  173 | int articulo_getRubroId(eArticulo* this, int* rubroId){
+      |                                                       ^
+..\src\Articulo.c:186:58: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  186 | int articulo_getRubroChar(eArticulo* this, char* rubroId){
+      |                                                          ^
+..\src\Articulo.c:216:44: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  216 | int articulo_printArticle (eArticulo* this){
+      |                                            ^
+..\src\Articulo.c:242:50: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  242 | int sortByArticle(void* article1, void* article2){
+      |                                                  ^
+..\src\Articulo.c:264:38: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  264 | void articulo_delete(eArticulo* this){
+      |                                      ^
+In file included from ..\src\Articulo.c:12:
+..\src\Articulo.h:42:5: error: old-style parameter declarations in prototyped function definition
+   42 | int sortByArticle(void* article1, void* article2)
+      |     ^~~~~~~~~~~~~
+..\src\Articulo.c:271: error: expected '{' at end of input
+..\src\Articulo.c:268:1: warning: control reaches end of non-void function [-Wreturn-type]
+  268 | }
+      | ^
+03:40:15 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'sortByArticle':
+..\src\parser.c:14:25: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   14 | FILE* openFileFromText(){
+      |                         ^
+..\src\parser.c:32:72: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   32 | int parser_articlesFromText(FILE *pFile, LinkedList *pArrayListVentas) {
+      |                                                                        ^
+..\src\parser.c:67:36: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   67 | FILE* writeFileFromText(char* path){
+      |                                    ^
+..\src\parser.c:85:114: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   85 | int saveAsText(FILE *pFile, LinkedList *pArrayListVentas,int informe1, int informe2, int informe3, int informe4) {
+      |                                                                                                                  ^
+In file included from ..\src\parser.c:6:
+..\src\Articulo.h:42:5: error: old-style parameter declarations in prototyped function definition
+   42 | int sortByArticle(void* article1, void* article2)
+      |     ^~~~~~~~~~~~~
+..\src\parser.c:100: error: expected '{' at end of input
+..\src\parser.c:99:1: warning: control reaches end of non-void function [-Wreturn-type]
+   99 | }
+      | ^
+03:40:32 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+..\src\Distribuidora.c: In function 'distribuidora_sortArticles':
+..\src\Distribuidora.c:39:4: warning: implicit declaration of function 'distribuidora_listArticles'; did you mean 'distribuidora_sortArticles'? [-Wimplicit-function-declaration]
+   39 |    distribuidora_listArticles(pList);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |    distribuidora_sortArticles
+..\src\Distribuidora.c: In function 'distribuidora_listArticles':
+..\src\Distribuidora.c:53:7: warning: implicit declaration of function 'distribuidora_printAllArticles'; did you mean 'distribuidora_listArticles'? [-Wimplicit-function-declaration]
+   53 |   if (distribuidora_printAllArticles(pList, lenLL)) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |       distribuidora_listArticles
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+Info: Nothing to build for Ventas_de_articulos
+03:42:13 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+Info: Nothing to build for Ventas_de_articulos
+03:44:52 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+03:46:55 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+03:49:04 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+04:05:51 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+..\src\Distribuidora.c: In function 'distribuidora_sortArticles':
+..\src\Distribuidora.c:39:4: warning: implicit declaration of function 'distribuidora_listArticles'; did you mean 'distribuidora_sortArticles'? [-Wimplicit-function-declaration]
+   39 |    distribuidora_listArticles(pList);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |    distribuidora_sortArticles
+..\src\Distribuidora.c: In function 'distribuidora_listArticles':
+..\src\Distribuidora.c:53:7: warning: implicit declaration of function 'distribuidora_printAllArticles'; did you mean 'distribuidora_listArticles'? [-Wimplicit-function-declaration]
+   53 |   if (distribuidora_printAllArticles(pList, lenLL)) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |       distribuidora_listArticles
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+04:06:11 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+..\src\Distribuidora.c: In function 'distribuidora_listArticles':
+..\src\Distribuidora.c:53:38: warning: passing argument 1 of 'distribuidora_printAllArticles' from incompatible pointer type [-Wincompatible-pointer-types]
+   53 |   if (distribuidora_printAllArticles(pList, lenLL)) {
+      |                                      ^~~~~
+      |                                      |
+      |                                      LinkedList * {aka struct LinkedList *}
+In file included from ..\src\Distribuidora.c:14:
+..\src\Distribuidora.h:15:48: note: expected 'eArticulo *' {aka 'struct <anonymous> *'} but argument is of type 'LinkedList *' {aka 'struct LinkedList *'}
+   15 | int distribuidora_printAllArticles (eArticulo* this , int lenList);
+      |                                     ~~~~~~~~~~~^~~~
+..\src\Distribuidora.c: At top level:
+..\src\Distribuidora.c:83:5: error: conflicting types for 'distribuidora_printAllArticles'
+   83 | int distribuidora_printAllArticles (LinkedList* pList , int lenList){
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Distribuidora.c:14:
+..\src\Distribuidora.h:15:5: note: previous declaration of 'distribuidora_printAllArticles' was here
+   15 | int distribuidora_printAllArticles (eArticulo* this , int lenList);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Distribuidora.c:102:5: error: conflicting types for 'distribuidora_fprintfArticle'
+  102 | int distribuidora_fprintfArticle (eArticulo* this, FILE* pFile){
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Distribuidora.c:14:
+..\src\Distribuidora.h:16:5: note: previous declaration of 'distribuidora_fprintfArticle' was here
+   16 | int distribuidora_fprintfArticle (LinkedList* this, FILE* pFile);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+04:06:38 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+..\src\Distribuidora.c: In function 'distribuidora_sortArticles':
+..\src\Distribuidora.c:39:4: warning: implicit declaration of function 'distribuidora_listArticles'; did you mean 'distribuidora_sortArticles'? [-Wimplicit-function-declaration]
+   39 |    distribuidora_listArticles(pList);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |    distribuidora_sortArticles
+..\src\Distribuidora.c: In function 'distribuidora_listArticles':
+..\src\Distribuidora.c:53:7: warning: implicit declaration of function 'distribuidora_printAllArticles'; did you mean 'distribuidora_listArticles'? [-Wimplicit-function-declaration]
+   53 |   if (distribuidora_printAllArticles(pList, lenLL)) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |       distribuidora_listArticles
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+04:07:13 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+..\src\Distribuidora.c: In function 'distribuidora_listArticles':
+..\src\Distribuidora.c:38:7: warning: implicit declaration of function 'distribuidora_printAllArticles'; did you mean 'distribuidora_listArticles'? [-Wimplicit-function-declaration]
+   38 |   if (distribuidora_printAllArticles(pList, lenLL)) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |       distribuidora_listArticles
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+04:07:41 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+04:07:59 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+04:09:37 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+04:11:05 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+04:14:30 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Articulo.o" "..\\src\\Articulo.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+04:22:29 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+..\src\Distribuidora.c: In function 'distribuidora_saveOnFile':
+..\src\Distribuidora.c:102:18: warning: passing argument 1 of 'saveAsText' from incompatible pointer type [-Wincompatible-pointer-types]
+  102 |    if(saveAsText(path,pList)){
+      |                  ^~~~
+      |                  |
+      |                  char *
+In file included from ..\src\Distribuidora.c:13:
+..\src\parser.h:19:22: note: expected 'FILE *' {aka 'struct _iobuf *'} but argument is of type 'char *'
+   19 | int saveAsText(FILE* pFile,LinkedList* pArrayListVenta,int informe1, int informe2, int informe3, int informe4);
+      |                ~~~~~~^~~~~
+..\src\Distribuidora.c:102:7: error: too few arguments to function 'saveAsText'
+  102 |    if(saveAsText(path,pList)){
+      |       ^~~~~~~~~~
+In file included from ..\src\Distribuidora.c:13:
+..\src\parser.h:19:5: note: declared here
+   19 | int saveAsText(FILE* pFile,LinkedList* pArrayListVenta,int informe1, int informe2, int informe3, int informe4);
+      |     ^~~~~~~~~~
+04:22:56 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c:80:5: error: conflicting types for 'fprintfArticle'
+   80 | int fprintfArticle (eArticulo* this, FILE* pFile){
+      |     ^~~~~~~~~~~~~~
+In file included from ..\src\parser.c:4:
+..\src\parser.h:21:5: note: previous declaration of 'fprintfArticle' was here
+   21 | int fprintfArticle (LinkedList* this, FILE* pFile);
+      |     ^~~~~~~~~~~~~~
+..\src\parser.c:108:5: error: conflicting types for 'saveAsText'
+  108 | int saveAsText(FILE *pFile, LinkedList *pList) {
+      |     ^~~~~~~~~~
+In file included from ..\src\parser.c:4:
+..\src\parser.h:19:5: note: previous declaration of 'saveAsText' was here
+   19 | int saveAsText(FILE* pFile,LinkedList* pArrayListVenta,int informe1, int informe2, int informe3, int informe4);
+      |     ^~~~~~~~~~
+..\src\parser.c: In function 'saveAsText':
+..\src\parser.c:116:19: warning: passing argument 1 of 'fprintfArticle' from incompatible pointer type [-Wincompatible-pointer-types]
+  116 |    fprintfArticle(pList,pFile);
+      |                   ^~~~~
+      |                   |
+      |                   LinkedList * {aka struct LinkedList *}
+..\src\parser.c:80:32: note: expected 'eArticulo *' {aka 'struct <anonymous> *'} but argument is of type 'LinkedList *' {aka 'struct LinkedList *'}
+   80 | int fprintfArticle (eArticulo* this, FILE* pFile){
+      |                     ~~~~~~~~~~~^~~~
+..\src\parser.c:110:13: warning: variable 'auxArticulo' set but not used [-Wunused-but-set-variable]
+  110 |  eArticulo* auxArticulo;
+      |             ^~~~~~~~~~~
+04:23:37 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c:80:5: error: conflicting types for 'fprintfArticle'
+   80 | int fprintfArticle (eArticulo* this, FILE* pFile){
+      |     ^~~~~~~~~~~~~~
+In file included from ..\src\parser.c:4:
+..\src\parser.h:21:5: note: previous declaration of 'fprintfArticle' was here
+   21 | int fprintfArticle (LinkedList* this, FILE* pFile);
+      |     ^~~~~~~~~~~~~~
+..\src\parser.c: In function 'saveAsText':
+..\src\parser.c:116:19: warning: passing argument 1 of 'fprintfArticle' from incompatible pointer type [-Wincompatible-pointer-types]
+  116 |    fprintfArticle(pList,pFile);
+      |                   ^~~~~
+      |                   |
+      |                   LinkedList * {aka struct LinkedList *}
+..\src\parser.c:80:32: note: expected 'eArticulo *' {aka 'struct <anonymous> *'} but argument is of type 'LinkedList *' {aka 'struct LinkedList *'}
+   80 | int fprintfArticle (eArticulo* this, FILE* pFile){
+      |                     ~~~~~~~~~~~^~~~
+..\src\parser.c:110:13: warning: variable 'auxArticulo' set but not used [-Wunused-but-set-variable]
+  110 |  eArticulo* auxArticulo;
+      |             ^~~~~~~~~~~
+04:24:24 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+In file included from ..\src\parser.c:4:
+..\src\parser.h:21:21: error: unknown type name 'eArticulo'
+   21 | int fprintfArticle (eArticulo* this, FILE* pFile);
+      |                     ^~~~~~~~~
+04:24:44 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Distribuidora.o" "..\\src\\Distribuidora.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos
+04:26:14 **** Incremental Build of configuration Debug for project Ventas_de_articulos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o Ventas_de_articulos.exe "src\\Articulo.o" "src\\Distribuidora.o" "src\\LinkedList.o" "src\\main.o" "src\\parser.o" "src\\utn.o" "src\\validation.o" 
+Info: Nothing to build for Ventas_de_articulos

@@ -1,0 +1,22 @@
+/*
+ * parser.h
+ *
+ *  Created on: 6 jun. 2020
+ *      Author: pocho
+ */
+#ifndef PARSER_H_
+#define PARSER_H_
+#include "LinkedList.h"
+#include <stdio.h>
+
+
+
+#endif /* PARSER_H_ */
+FILE* openFileFromText(char* path);
+int parser_ventasFromText(FILE* pFile , LinkedList* pArrayListVenta);
+
+FILE* writeFileFromText(char* path);
+int saveAsText(FILE* pFile,LinkedList* pArrayListVenta,int informe1, int informe2, int informe3, int informe4);
+
+
+
